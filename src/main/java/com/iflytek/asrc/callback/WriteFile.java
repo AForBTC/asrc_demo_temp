@@ -28,7 +28,7 @@ public class WriteFile {
     public String callback(@RequestBody AsrcRequestCallback asrcRequestCallback) throws IOException {
 
 //        System.out.println("=========="+asrcRequestCallback);
-        System.out.println("==========================================================================");
+//        System.out.println("==========================================================================");
 //        System.out.println(JSON.toJSONString(asrcRequestCallback.getBody()));
         SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss.SS");
         dateFormat.setTimeZone(TimeZone.getTimeZone("GMT+00:00"));
@@ -52,7 +52,7 @@ public class WriteFile {
         // 将 aid 的值传给 aid_sb
         // 输出文件名为:  audio (aid的值).txt
 
-        System.out.println("全文结果："+stringBuffer);
+//        System.out.println("全文结果："+stringBuffer);
 //        log.info("全文结果：{}",stringBuffer);
 //        System.out.println("lalala:" + stringBuffer);
 

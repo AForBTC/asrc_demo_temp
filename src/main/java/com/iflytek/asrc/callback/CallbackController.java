@@ -42,9 +42,9 @@ public class CallbackController {
 
     @RequestMapping("/callback")
     public String callback(@RequestBody AsrcRequestCallback asrcRequestCallback) {
-        System.out.println("==========" + asrcRequestCallback);
-        System.out.println("==========================================================================");
-        System.out.println(JSON.toJSONString(asrcRequestCallback.getBody()));
+//        System.out.println("==========" + asrcRequestCallback);
+//        System.out.println("==========================================================================");
+//        System.out.println(JSON.toJSONString(asrcRequestCallback.getBody()));
         SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss.SS");
         dateFormat.setTimeZone(TimeZone.getTimeZone("GMT+00:00"));
         StringBuffer stringBuffer = new StringBuffer();
@@ -72,7 +72,7 @@ public class CallbackController {
             stringBuffer.append(lattices.getSpk() + ": " + lattices.getOnebest() + "\n");
         });
 //        System.out.println("全文结果："+stringBuffer);
-        log.info("全文结果：{}", stringBuffer);
+//        log.info("全文结果：{}", stringBuffer);
         return stringBuffer.toString();
     }
 

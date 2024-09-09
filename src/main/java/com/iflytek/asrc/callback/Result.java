@@ -94,7 +94,7 @@ public class Result {
             builder.deleteCharAt(builder.length() - 1);
         }
         String baseString = builder.toString();
-        System.out.println("baseString：" + baseString);
+//        System.out.println("baseString：" + baseString);
         Mac mac = Mac.getInstance("HmacSHA1");
         SecretKeySpec keySpec = new SecretKeySpec(accessKeySecret.getBytes(StandardCharsets.UTF_8), StandardCharsets.UTF_8.name());
         mac.init(keySpec);
